@@ -15,7 +15,7 @@ public class ExerciseTest {
 
     @Before
     public void before() {
-        exercise1 = new Exercise(1, "Gregor's Exercise", ExerciseType.PICADO);
+        exercise1 = new Exercise(1, "Gregor's Exercise", "Alzapua");
     }
 
     @Test
@@ -43,13 +43,13 @@ public class ExerciseTest {
 
     @Test
     public void canGetType() {
-        assertEquals(ExerciseType.PICADO, exercise1.getType());
+        assertEquals("Alzapua", exercise1.getType());
     }
 
     @Test
     public void canSetType() {
-        exercise1.setType(ExerciseType.ALZAPUA);
-        assertEquals(ExerciseType.ALZAPUA, exercise1.getType());
+        exercise1.setType("Alzapua");
+        assertEquals("Alzapua", exercise1.getType());
     }
 
     @Test

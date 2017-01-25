@@ -10,12 +10,12 @@ public class Exercise {
 
     private int id;
     private String name;
-    private ExerciseType type;
+    private String type;
     private int bpm;
     private Date date;
 
 
-    public Exercise(int id, String name, ExerciseType type) {
+    public Exercise(int id, String name, String type) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -39,11 +39,11 @@ public class Exercise {
         this.name = name;
     }
 
-    public ExerciseType getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(ExerciseType type) {
+    public void setType(String type) {
         this.type = type;
     }
 

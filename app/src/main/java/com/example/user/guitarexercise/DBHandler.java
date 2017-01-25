@@ -51,7 +51,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
     public void addExercise(Exercise exercise) {
         String name = exercise.getName();
-        ExerciseType type = exercise.getType();
+        String type = exercise.getType();
         String bpm = exercise.bpmToString();
         Date date = exercise.getDate();
 
@@ -101,7 +101,7 @@ public class DBHandler extends SQLiteOpenHelper {
     public void updateExerise(Exercise exercise) {
         int id = exercise.getId();
         String name = exercise.getName();
-        ExerciseType type = exercise.getType();
+        String type = exercise.getType();
         String bpm = exercise.bpmToString();
         Date date = exercise.getDate();
 
@@ -130,7 +130,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
         int id = Integer.parseInt(cursor.getString(idColumnNum));
         String name = cursor.getString(nameColumnNum);
-        Exercise type = cursor.getString(typeColumnNum);
+        String type = cursor.getString(typeColumnNum);
         String bpm = cursor.getString(bpmColumnNum);
         String date = cursor.getString(dateColumnNum);
 
